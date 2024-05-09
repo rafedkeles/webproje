@@ -1,1 +1,17 @@
-
+body{
+  background-image: url('background.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.linkc{
+  color:#e9cee9;
+  text-decoration: none;
+}
+.div_background{
+  background-color: rgb(35, 30, 71);
+  float:left;
+  width:12%; 
+  height:20px;
+  margin-left:5px;
+  margin-bottom:20px; 
+}
