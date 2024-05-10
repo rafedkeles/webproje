@@ -1,5 +1,5 @@
-body{
-  background-image: url('background.jpg');
+.backcroundanacayfas{
+  background-image: url('background.png');
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -8,10 +8,21 @@ body{
   text-decoration: none;
 }
 .div_background{
-  background-color: rgb(35, 30, 71);
+  background-color: rgb(83, 44, 44);
   float:left;
-  width:12%; 
-  height:20px;
+  width:13.5%;
+  padding:20px;
+  height:21%;
   margin-left:5px;
   margin-bottom:20px; 
+}
+/**************************************************************************************************************************/
+/********************************************************cv****************************************************************/
+.cv{
+  background-color: lightskyblue;
+}
+.imagstyleincv{
+  width:40%; 
+  height:50%;
+  padding-left: 550px;
 }
