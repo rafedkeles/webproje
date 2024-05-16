@@ -1,28 +1,60 @@
-.backcroundanacayfas{
+.menu{
   background-image: url('background.png');
   background-size: 100% 100%;
   background-attachment: fixed;
+  overflow: hidden; 
 }
-.linkc{
-  color:#e9cee9;
+
+.div_background {
   text-decoration: none;
+  color: #fff;
+  background-color: #4c53af;
+  padding: 10px 60px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  float: left; 
 }
-.div_background{
-  background-color: rgb(83, 44, 44);
-  float:left;
-  width:13.5%;
-  padding:20px;
-  height:21%;
-  margin-left:5px;
-  margin-bottom:20px; 
+
+.linkc {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.linkc:hover {
+  color: #000000;
 }
 /**************************************************************************************************************************/
 /********************************************************cv****************************************************************/
-.cv{
-  background-color: lightskyblue;
+.cv {
+  display: flex;
+  flex-direction: row; 
+  
 }
-.imagstyleincv{
-  width:40%; 
-  height:50%;
-  padding-left: 550px;
+.imagstyleincv {
+  flex: 1; 
+  margin-right: 20px;
+}
+.imagstyleincv img {
+  width: 100%;
+  height: auto;
+  
+}
+.text {
+  flex: 2;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  font-family:'Times New Roman', Times, serif;
+
+}
+.backcroundanacayfas_cv
+{
+  background-image: url(cv_back.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.imagstyleincv_t {
+  width: 55%;
+  height: 100%;
 }
