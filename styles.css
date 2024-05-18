@@ -58,3 +58,148 @@
   width: 55%;
   height: 100%;
 }
+/**************************************************************************************************************************/
+/********************************************************shehrim****************************************************************/
+/* Styles for the slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Set width and height of images */
+img {
+  width: 400px;
+  height: 300px;
+}
+.backround_sehrim{
+  background-image: url('cv_back.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  overflow: hidden; 
+}
+/**************************************************************************************************************************/
+/********************************************************Login****************************************************************/
+
+.input-field {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Butonun stili */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  margin: 0;
+  padding-top: 10%;
+}
+
+.form {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+.profile-image {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+}
+/****************************************************mirasimiz**********************************************************************/
+/************************************************************************************************************************/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-image: url(cv_back.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+h1,
+h2 {
+  color: #111010;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.content {
+  margin-top: 20px;
+}
+.section {
+  margin-bottom: 30px;
+  flex: 2;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+}
+.section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+
