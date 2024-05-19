@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim Formu</title>
+  <link rel="stylesheet" href="stylesilestim.css">
+</head>
+<body class="backcroundanacayfas_cv">
+  
+  <h1>iletisim:</h1>
+  <div class="container">
+    <form id="contactForm" class="form-container" action="results.html" method="get">
+      <div>
+        <label for="name" class="form-label">Adınız:</label>
+        <input type="text" id="name" name="ad" class="form-input" >
+      </div>
+      <div>
+        <label for="email" class="form-label">E-posta Adresiniz:</label>
+        <input type="email" id="email" name="e" class="form-input" >
+      </div>
+      <div>
+        <label class="form-label">Cinsiyetiniz:</label>
+        <input type="radio" id="male" name="gender" value="Erkek" >
+        <label for="male">Erkek</label>
+        <input type="radio" id="female" name="gender" value="Kadın" >
+        <label for="female">Kadın</label>
+      </div>
+      <div>
+        <label class="form-label">hangi ülkeden:</label>
+        <input type="checkbox" id="Türkiye" name="u" value="Türkiye">
+        <label for="Türkiye">Türkiye</label>
+        <input type="checkbox" id="Suriye " name="u" value="Suriye">
+        <label for="Suriye ">Suriye</label>
+        <input type="checkbox" id="Başka bir ülke" name="u" value="Başka bir ülke">
+        <label for="Başka bir ülke">Başka bir ülke</label>
+      </div>
+      <div>
+        <label for="message" class="form-label">Mesajınız:</label>
+        <textarea id="message" name="m" class="form-input" rows="4" ></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Gönder" class="form-button">
+        <button type="reset" class="form-button">Temizle</button>
+      </div>
+      <div id="errorMessage" class="error-message"></div>
+    </form>
+  </div>
+  <script src="form.js">
+  </script>
+</body>
+</html>
