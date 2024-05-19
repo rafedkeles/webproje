@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim Formu Sonuçları</title>
+  <style>
+    body.cv {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-button {
+      padding: 10px;
+      font-size: 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-button:hover {
+      background: #0056b3;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      background: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body class="cv">
+  
+  <div class="container">
+    <h1>Gönderilen Bilgiler</h1>
+    <div>
+      <label class="form-label">Adınız:</label>
+      <p id="name"></p>
+    </div>
+    <div>
+      <label class="form-label">E-posta Adresiniz:</label>
+      <p id="email"></p>
+    </div>
+    <div>
+      <label class="form-label">Mesajınız:</label>
+      <p id="message"></p>
+    </div>
+    <div>
+      <label class="form-label">Cinsiyetiniz:</label>
+      <p id="gender"></p>
+    </div>
+    <div>
+      <label class="form-label">ulke:</label>
+      <p id="u"></p>
+    </div>
+    <button class="form-button" onclick="goBack()">Geri Dön</button>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      document.getElementById('name').innerText = urlParams.get('ad') || 'Ad bilgisi bulunamadı';
+      document.getElementById('email').innerText = urlParams.get('e') || 'E-posta bilgisi bulunamadı';
+      document.getElementById('message').innerText = urlParams.get('m') || 'Mesaj bilgisi bulunamadı';
+      document.getElementById('gender').innerText = urlParams.get('gender') || 'Cinsiyet bilgisi bulunamadı';
+
+      const ulke = urlParams.getAll('u');
+      document.getElementById('u').innerText = ulke.length > 0 ? ulke.join(', ') : 'ülke bilgisi bulunamadı';
+    });
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
