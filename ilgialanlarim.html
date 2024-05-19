@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Scorers</title>
+  </head>
+  <body class="backcroundanacayfas_cv">
+    
+    <div id="top-scorers-container"></div>
+    <script>
+      async function fetchTopScorers() {
+        const url =
+          "https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=39&season=2023";
+        const options = {
+          method: "GET",
+          headers: {
+            "X-RapidAPI-Key":
+              "57f2c774ffmshdb559369ca05344p1cba95jsn8a064ab378e0",
+            "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
+          },
+        };
+
+        try {
+          const response = await fetch(url, options);
+          const result = await response.json();
+          const container = document.getElementById("top-scorers-container");
+          const title = document.createElement("h2");
+          title.textContent = "Top Scorers - Premier League 2023/2024";
+          container.appendChild(title);
+
+          const playersList = document.createElement("ul");
+          result.response.forEach((player) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `${player.player.firstname} ${player.player.lastname} - Goals: ${player.statistics[0].goals.total}`;
+            playersList.appendChild(listItem);
+          });
+
+          container.appendChild(playersList);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      fetchTopScorers();
+    </script>
+    <h1 class="cv" style="color: rgb(32, 32, 32);">
+      Futbol sporunu seviyorum ve İspanya Ligi ile İngiltere Premier Ligi'ni
+      takip etmeyi seviyorum ve en sevdiğim oyuncu türü golcüler, yani bu
+      İngiliz Ligi'ndeki golcülerin listesi. Ben küçükken Futbol sporun
+      maçlarını izliyordum yani 15 yaşındaken beri hala izliyorum. ve benim
+      desteklediğim takımlar Real Madrid ve liverpool takımlarıdır.
+    </h1>
+  </body>
+</html>
