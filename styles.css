@@ -50,7 +50,7 @@
 }
 .backcroundanacayfas_cv
 {
-  background-image: url(cv_back.jpg);
+  background-image:url('back2.jpg');
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -60,7 +60,6 @@
 }
 /**************************************************************************************************************************/
 /********************************************************shehrim****************************************************************/
-/* Styles for the slideshow */
 .slideshow-container {
   position: relative;
   max-width: 1000px;
@@ -78,8 +77,6 @@
   position: absolute;
   top: 0;
 }
-
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -98,25 +95,22 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Set width and height of images */
 img {
   width: 400px;
   height: 300px;
 }
 .backround_sehrim{
-  background-image: url('cv_back.jpg');
+  background-image: url('bacgr.jpg');
   background-size: 100% 100%;
   background-attachment: fixed;
   overflow: hidden; 
@@ -163,43 +157,11 @@ img {
   height: 100px; 
   border-radius: 50%; 
 }
-/****************************************************mirasimiz**********************************************************************/
+/**************************************************************************************************************************/
+/************************************************************************************************************************/
+/**************************************************************************************************************************/
 /************************************************************************************************************************/
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  background-image: url(cv_back.jpg);
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
-h1,
-h2 {
-  color: #111010;
-}
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.content {
-  margin-top: 20px;
-}
-.section {
-  margin-bottom: 30px;
-  flex: 2;
-  text-align: justify;
-  color: rgb(0, 0, 0);
-  font-family: "Times New Roman", Times, serif;
-}
-.section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 10px;
-}
+
 
 
